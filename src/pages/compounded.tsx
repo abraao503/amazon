@@ -8,6 +8,7 @@ import location from '../assets/location.png';
 import medicine from '../assets/medicine.png';
 import rate from '../assets/rate.png';
 import skincare from '../assets/skincare.png';
+import leaf from '../assets/leaf.png';
 
 
 export default function Compounded() {
@@ -18,25 +19,27 @@ export default function Compounded() {
           <img src={logo} alt="logo" className="" />
         </div>
         <div 
-          className="flex bg-[#F5F5F5] bg-no-repeat bg-cover h-[496px] justify-center" 
+          className="flex bg-[#F5F5F5] bg-no-repeat bg-cover h-[496px] z-0" 
           style={{backgroundImage: `url(${background})`}}>
-          <div className="flex items-center">
-            <div className="flex flex-col">
-              <h1 className="text-5xl text-white font-bold pb-2">
-                Sua saúde pede confiança.
-              </h1>
-              <h1 className="text-5xl text-white font-bold">
-                Pede Amazônia Fórmula.
-              </h1>
-              <button 
-                className="bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px]">
-                Faça seu manipulado agora!
-              </button>
-            </div>
-            <div className="flex flex-1 self-end">
-              <img src={imageMan} 
-                alt="Imagem de um homem com uma caixa de remédio" 
-                className="h-[480px]" />
+          <div style={{background: 'rgba(18,40,15,0.74)'}} className="flex justify-center z-10 flex-1">
+            <div className="flex items-center">
+              <div className="flex flex-col">
+                <h1 className="text-5xl text-white font-bold pb-2">
+                  Sua saúde pede confiança.
+                </h1>
+                <h1 className="text-5xl text-white font-bold">
+                  Pede Amazônia Fórmula.
+                </h1>
+                <button 
+                  className="bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px]">
+                  Faça seu manipulado agora!
+                </button>
+              </div>
+              <div className="flex flex-1 self-end">
+                <img src={imageMan} 
+                  alt="Imagem de um homem com uma caixa de remédio" 
+                  className="h-[480px]" />
+              </div>
             </div>
           </div>
         </div>
@@ -94,25 +97,27 @@ export default function Compounded() {
             </div>
           </div>
         </div>
-        <div style={{background: 'rgba(52,99,59,0.95)'}} className="py-20">
-          <h1 className="text-4xl text-white font-bold text-center mb-8">
-            Como funciona o Amazônia  <br/>
-            Fórmula Express?
-          </h1>
-          <div className="flex justify-center">
-            <div className="border-b-[5px] w-[54px] rounded-[3px] mb-6">
+        <div style={{background: 'rgba(52,99,59,0.95)', backgroundImage: `url(${leaf})`}} className="z-0">
+          <div style={{background: 'rgba(52,99,59,0.95)'}} className="z-10 py-20">
+            <h1 className="text-4xl text-white font-bold text-center mb-8">
+              Como funciona o Amazônia  <br/>
+              Fórmula Express?
+            </h1>
+            <div className="flex justify-center">
+              <div className="border-b-[5px] w-[54px] rounded-[3px] mb-6">
+              </div>
             </div>
-          </div>
-          <div className="flex justify-center">
-            <p className="text-lg text-center w-[550px]">
-              Visando sua comodidade e conforto a Amazônia Fórmula oferece um serviço de Entrega em Domicílio. O medicamento chega no local de sua preferência, com toda a segurança e qualidade.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <button 
-              className="bg-[#18970c] font-bold text-xl h-[64px] mt-3 text-white p-[14px] w-[314px] rounded-[5px]">
-              Faça seu manipulado agora!
-            </button>
+            <div className="flex justify-center">
+              <p className="text-lg text-center w-[550px]">
+                Visando sua comodidade e conforto a Amazônia Fórmula oferece um serviço de Entrega em Domicílio. O medicamento chega no local de sua preferência, com toda a segurança e qualidade.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <button 
+                className="bg-[#18970c] font-bold text-xl h-[64px] mt-3 text-white p-[14px] w-[314px] rounded-[5px]">
+                Faça seu manipulado agora!
+              </button>
+            </div>
           </div>
         </div>
         <div className="flex flex-1 justify-center p-4">
