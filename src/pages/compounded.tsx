@@ -9,11 +9,16 @@ import medicine from '../assets/medicine.png';
 import rate from '../assets/rate.png';
 import skincare from '../assets/skincare.png';
 import leaf from '../assets/leaf.png';
+import { useState } from 'react';
+import FullChatModal from '../components/fullChatModal';
 
 
 export default function Compounded() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
+      <FullChatModal open={open} onClose={() => setOpen(false)} />
       <div className="flex flex-col">
         <div className="flex flex-1 justify-center p-4">
           <img src={logo} alt="logo" className="" />
@@ -31,7 +36,9 @@ export default function Compounded() {
                   Pede Amazônia Fórmula.
                 </h1>
                 <button 
-                  className="bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px]">
+                  className="bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px]"
+                  onClick={() => setOpen(true)}   
+                >
                   Faça seu manipulado agora!
                 </button>
               </div>
