@@ -30,6 +30,10 @@
   height: 100vh;
 }
 
+img {
+  max-width: fit-content;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
