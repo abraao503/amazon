@@ -5,11 +5,16 @@ import "./index.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 import Compounded from "./pages/compounded";
+import Clarie from "./pages/clarie";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Compounded />,
+  },
+  {
+    path: "/clarie",
+    element: <Clarie />,
   },
 ]);
 
