@@ -11,30 +11,30 @@ import leaf from "../assets/leaf.png";
 import { useState } from "react";
 import FullChatModal from "../components/fullChatModal";
 
-// declare global {
-//   interface Window {
-//     LTK_DATA: any; // eslint-disable-line
-//   }
-// }
+declare global {
+  interface Window {
+    LTK_DATA: any; // eslint-disable-line
+  }
+}
 
-// (function (l, d, s, t, k) {
-//   fetch(t + "?client=" + k, {
-//     headers: { href: l.location.href, p: l.performance.now().toString() },
-//   }).then(function (o) {
-//     o.json().then(function (o) {
-//       console.log(o);
-//       l.LTK_DATA = o;
-//       const c = d.createElement(s);
-//       d.body.appendChild(((c.innerHTML = o.js), c));
-//     });
-//   });
-// })(
-//   window,
-//   document,
-//   "script",
-//   "https://api.leadstaker.com/chats",
-//   "663ba7ef3644a70024d469fd"
-// );
+(function (l, d, s, t, k) {
+  fetch(t + "?client=" + k, {
+    headers: { href: l.location.href, p: l.performance.now().toString() },
+  }).then(function (o) {
+    o.json().then(function (o) {
+      console.log(o);
+      l.LTK_DATA = o;
+      const c = d.createElement(s);
+      d.body.appendChild(((c.innerHTML = o.js), c));
+    });
+  });
+})(
+  window,
+  document,
+  "script",
+  "https://api.leadstaker.com/chats",
+  "663ba7ef3644a70024d469fd"
+);
 
 export default function Compounded() {
   const [open, setOpen] = useState(false);

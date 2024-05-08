@@ -1,26 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import './index.css'
-import { ParallaxProvider } from 'react-scroll-parallax';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
-import Compounded from "./pages/compounded"
+import Compounded from "./pages/compounded";
 
 const router = createBrowserRouter([
   {
-    path: "/manipulados",
+    path: "/",
     element: <Compounded />,
   },
 ]);
 
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ParallaxProvider>
       <RouterProvider router={router} />
     </ParallaxProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
