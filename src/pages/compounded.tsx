@@ -8,9 +8,8 @@ import medicine from "../assets/medicine.png";
 import rate from "../assets/rate.png";
 import skincare from "../assets/skincare.png";
 import leaf from "../assets/leaf.png";
-import { useState } from "react";
-import FullChatModal from "../components/fullChatModal";
 
+// leadstaker config
 declare global {
   interface Window {
     LTK_DATA: any; // eslint-disable-line
@@ -35,13 +34,11 @@ declare global {
   "https://api.leadstaker.com/chats",
   "663ba7ef3644a70024d469fd"
 );
+// end leadstaker config
 
 export default function Compounded() {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
-      <FullChatModal open={open} onClose={() => setOpen(false)} />
       <div className="flex flex-col">
         <div className="flex flex-1 justify-center p-4">
           <img src={logo} alt="logo" className="" />
@@ -55,33 +52,26 @@ export default function Compounded() {
             className="flex justify-center z-10 flex-1"
           >
             <div className="flex items-center">
-              <div className="flex flex-col">
-                <h1 className="text-5xl text-white font-bold pb-2">
+              <div className="flex flex-col max-[950px]:items-center">
+                <h1 className="text-5xl text-white font-bold pb-2 max-[950px]:text-center">
                   Sua saúde pede confiança.
                 </h1>
-                <h1 className="text-5xl text-white font-bold">
+                <h1 className="text-5xl text-white font-bold max-[950px]:text-center">
                   Pede Amazônia Fórmula.
                 </h1>
-                <button
-                  className="bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px]"
-                  onClick={() => setOpen(true)}
-                >
+                <button className="sell-button-chat bg-[#18970c] font-bold text-lg h-[64px] mt-4 text-white p-[14px] w-[294px] rounded-[26px] max-[950px]:mt-8">
                   Faça seu manipulado agora!
                 </button>
               </div>
-              <div className="flex flex-1 self-end">
-                <img
-                  src={imageMan}
-                  alt="Imagem de um homem com uma caixa de remédio"
-                  className="h-[480px]"
-                />
+              <div className="flex flex-1 self-end max-[950px]:hidden">
+                <img src={imageMan} alt="homem" className="h-[480px]" />
               </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-6 border-b border-[#f3f3f3] py-2">
+        <div className="flex justify-center mt-6 border-b border-[#f3f3f3] max-[950px]:border-none py-2">
           <div className="flex flex-col">
-            <div className="grid grid-cols-3 w-[900px]">
+            <div className="grid grid-cols-3 w-[900px] max-[950px]:grid-cols-1 max-[950px]:justify-items-center max-[950px]:gap-y-10 max-[950px]:w-full">
               <div className="flex flex-col items-center w-[280px] transform transition duration-500 hover:scale-110">
                 <img
                   src={skincare}
@@ -128,7 +118,7 @@ export default function Compounded() {
         </div>
         <div className="flex mt-2 justify-center my-6">
           <div className="flex flex-col">
-            <div className="grid grid-cols-3 w-[900px]">
+            <div className="grid grid-cols-3 w-[900px] max-[950px]:grid-cols-1 max-[950px]:justify-items-center max-[950px]:gap-y-10 max-[950px]:w-full">
               <div className="flex flex-col items-center w-[280px] transform transition duration-500 hover:scale-110">
                 <img
                   src={location}
@@ -198,7 +188,7 @@ export default function Compounded() {
               </p>
             </div>
             <div className="flex justify-center">
-              <button className="bg-[#18970c] font-bold text-xl h-[64px] mt-3 text-white p-[14px] w-[314px] rounded-[5px]">
+              <button className="sell-button-chat bg-[#18970c] font-bold text-xl h-[64px] mt-3 text-white p-[14px] w-[314px] rounded-[5px]">
                 Faça seu manipulado agora!
               </button>
             </div>
