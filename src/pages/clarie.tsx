@@ -177,9 +177,9 @@ export default function Clarie() {
         >
           <div
             style={{ background: "rgba(0,0,0,0.41)" }}
-            className="flex justify-center z-10 flex-1"
+            className="flex justify-center z-10 w-full"
           >
-            <div className="flex flex-col py-14 px-10 w-screen">
+            <div className="flex flex-col py-14 px-10 w-full">
               <div className="flex flex-col">
                 <strong className="font-sans text-[28px] mb-8">
                   Aproveite a noite para rejuvenescer com seus benefícios
