@@ -10,9 +10,20 @@ export default function Clarie() {
     <>
       <div className="flex flex-col">
         <div
-          className="flex bg-no-repeat bg-cover z-0 h-[714px]"
+          className="flex bg-no-repeat bg-cover z-0 h-[714px] lg:h-[670px]"
           style={{ backgroundImage: `url(${backgroundWoman})` }}
         >
+          <iframe
+            className="absolute z-0 hidden lg:block"
+            id="lp-pom-block-8-video-background-iframe"
+            src="//fast.wistia.net/embed/iframe/u616ngx6y6?videoFoam=true&amp;autoPlay=true&amp;endVideoBehavior=loop&amp;volume=100&amp;controlsVisibleOnLoad=false&amp;playButton=false&amp;volumeControl=false&amp;playbar=false&amp;fullscreenButton=false&amp;smallPlayButton=false"
+            style={{
+              top: 0,
+              left: "-8%",
+              height: "100%",
+              width: "115%",
+            }}
+          ></iframe>
           <div
             style={{ background: "rgba(0,0,0,0.41)" }}
             className="flex justify-center z-10 flex-1"
