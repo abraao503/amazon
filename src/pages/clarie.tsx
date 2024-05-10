@@ -10,7 +10,7 @@ export default function Clarie() {
     <>
       <div className="flex flex-col">
         <div
-          className="flex bg-[#F5F5F5] bg-no-repeat bg-cover z-0"
+          className="flex bg-no-repeat bg-cover z-0 h-[714px]"
           style={{ backgroundImage: `url(${backgroundWoman})` }}
         >
           <div
@@ -19,7 +19,7 @@ export default function Clarie() {
           >
             <div className="flex items-center justify-center p-4">
               <div className="flex flex-col items-center">
-                <h1 className="text-4xl text-white pb-6 text-center font-sans">
+                <h1 className="text-5xl text-white pb-6 text-center font-sans sm:text-7xl">
                   Não espere o amanhã para transformar sua pele.
                 </h1>
                 <div className="w-[579px] max-[950px]:w-full">
