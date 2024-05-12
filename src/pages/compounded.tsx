@@ -171,7 +171,7 @@ export default function Compounded() {
         >
           <div
             style={{ background: "rgba(52,99,59,0.95)" }}
-            className="z-10 py-20"
+            className="z-10 py-20 px-10"
           >
             <h1 className="text-4xl text-white font-bold text-center mb-8">
               Como funciona o Amazônia <br />
