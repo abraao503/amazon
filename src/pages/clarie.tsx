@@ -10,7 +10,7 @@ export default function Clarie() {
     <>
       <div className="flex flex-col">
         <div
-          className="flex bg-no-repeat bg-cover z-0 h-[714px] lg:h-[670px]"
+          className="flex bg-no-repeat bg-cover z-0 h-[714px] lg:h-[560px] xl:h-[710px]"
           style={{ backgroundImage: `url(${backgroundWoman})` }}
         >
           <iframe
@@ -18,10 +18,8 @@ export default function Clarie() {
             id="lp-pom-block-8-video-background-iframe"
             src="//fast.wistia.net/embed/iframe/u616ngx6y6?videoFoam=true&amp;autoPlay=true&amp;endVideoBehavior=loop&amp;volume=100&amp;controlsVisibleOnLoad=false&amp;playButton=false&amp;volumeControl=false&amp;playbar=false&amp;fullscreenButton=false&amp;smallPlayButton=false"
             style={{
-              top: 0,
-              left: "-8%",
-              height: "100%",
-              width: "115%",
+              height: "710px",
+              width: "100%",
             }}
           ></iframe>
           <div
